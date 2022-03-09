@@ -1,0 +1,33 @@
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0rem;
+}
+
+.main-header .search {
+  flex: 1;
+  margin: 0rem 2rem;
+}
+
+.main-header .search input {
+  width: 100%;
+  outline: none;
+  padding: 0.8rem;
+  font-size: 1.2rem;
+  border-radius: 50px;
+}
+
+.main-header nav a {
+  font-size: 1.2rem;
+  display: inline-block;
+  margin-left: 1rem;
+  font-weight: 800;
+}
+
+@media (max-width: 800px) {
+  .main-header .search,
+  .main-header nav {
+    display: none;
+  }
+}
