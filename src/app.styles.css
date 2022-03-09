@@ -10,9 +10,21 @@ body {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .title {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 2rem;
   font-weight: 300;
+  text-transform: capitalize;
+}
+
+.container {
+  width: 1400px;
+  max-width: 95%;
+  margin: 0 auto;
 }

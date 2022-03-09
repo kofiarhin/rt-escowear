@@ -1,0 +1,17 @@
+.card {
+  min-height: 150px;
+  text-align: center;
+}
+.card img {
+  width: 100%;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 800px) {
+  .card h2 {
+    font-size: 1rem;
+  }
+}

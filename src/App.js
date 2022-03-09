@@ -1,15 +1,17 @@
 import "./app.styles.css";
-import { useEffect } from "react";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import CardList from "./Component/CardList/CardList.component";
+import Home from "./Pages/Home/Home.page.component";
+import Details from "./Pages/Details/Details.page";
 const App = () => {
-  useEffect(() => {
-    fetch("/data/data.json")
-      .then((response) => response.json())
-      .then((result) => console.log(result["shoes"]));
-  }, []);
   return (
-    <div>
-      <h1 className="title">Escowear</h1>
+    <div className="container">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/details/:type/:name" element={<Details />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 };
