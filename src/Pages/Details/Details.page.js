@@ -10,8 +10,9 @@ const Details = () => {
 
   return (
     <div className="details">
-      <h1> {item.name} </h1>
       <Image name={item.name} type={type} />
+      <h1> {item.name} </h1>
+      <h2> ${item.price} </h2>
     </div>
   );
 };

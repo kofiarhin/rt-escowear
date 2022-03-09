@@ -1,0 +1,44 @@
+.side-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(60, 12, 109, 1);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  transition: all ease-in-out 300ms;
+}
+
+.side-nav .close {
+  font-size: 3rem;
+  color: rgb(148, 9, 76);
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  cursor: pointer;
+}
+
+.side-nav .search input {
+  width: 300px;
+  padding: 0.8rem 0rem;
+  text-indent: 20px;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  margin-bottom: 2rem;
+}
+
+.side-nav nav a {
+  font-size: 1.5rem;
+  color: white;
+}
+
+@media (min-width: 800px) {
+  .side-nav {
+    display: none;
+  }
+}

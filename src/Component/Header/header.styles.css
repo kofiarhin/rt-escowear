@@ -25,9 +25,25 @@
   font-weight: 800;
 }
 
+.main-header nav a span {
+  color: red;
+  display: inline-block;
+  color: red;
+}
+
+.main-header .menu {
+  font-size: 2.5rem;
+  cursor: pointer;
+  display: none;
+}
+
 @media (max-width: 800px) {
   .main-header .search,
   .main-header nav {
     display: none;
+  }
+
+  .main-header .menu {
+    display: block;
   }
 }

@@ -1,3 +1,9 @@
+.details {
+  text-align: center;
+}
+
 .details img {
-  max-width: 400px;
+  max-width: 500px;
+  display: block;
+  margin: 0 auto 2rem;
 }
