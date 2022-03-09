@@ -1,0 +1,23 @@
+.landing {
+  min-height: 80vh;
+}
+
+.landing-wrapper {
+  min-height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.landing-unit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+  .landing-unit {
+    font-size: 1.5rem;
+  }
+}

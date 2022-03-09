@@ -21,6 +21,12 @@ a {
   color: black;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .title {
   text-align: center;
   font-size: 2rem;

@@ -1,8 +1,10 @@
 import CardList from "../../Component/CardList/CardList.component";
+import { useParams } from "react-router-dom";
 const Home = () => {
+  const { type } = useParams();
   return (
     <div>
-      <CardList type="shirts" />
+      <CardList type={type} />
     </div>
   );
 };

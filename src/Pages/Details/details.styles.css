@@ -7,3 +7,9 @@
   display: block;
   margin: 0 auto 2rem;
 }
+
+@media (max-width: 800px) {
+  .details img {
+    width: 100%;
+  }
+}
