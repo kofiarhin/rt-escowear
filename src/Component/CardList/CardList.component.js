@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { get_store_data } from "../../redux/action/data.actions";
+import { getStoreData } from "../../redux/action/data.actions";
 import Loading from "../../Loading/Loading.component";
 import Card from "../Card/Card.component";
 import "./cardlist.styles.css";
@@ -11,7 +11,7 @@ const CardList = ({ type = "hoodies" }) => {
   const storeData = data[type];
 
   useEffect(() => {
-    dispatch(get_store_data());
+    dispatch(getStoreData());
   }, []);
   return (
     <div>

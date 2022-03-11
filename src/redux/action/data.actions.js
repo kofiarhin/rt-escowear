@@ -5,7 +5,7 @@ import {
   GET_DATA_FAILED,
 } from "../constants";
 
-export const get_store_data = () => (dispatch) => {
+export const getStoreData = () => (dispatch) => {
   dispatch({
     type: GET_DATA_PENDING,
   });

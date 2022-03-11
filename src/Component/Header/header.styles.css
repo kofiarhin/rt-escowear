@@ -1,12 +1,16 @@
+.header-wrapper {
+  margin-bottom: 2rem;
+}
+
 .main-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 0rem;
+  padding: 1rem 0rem;
 }
 
 .main-header h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .main-header .search {
   flex: 1;
@@ -16,8 +20,8 @@
 .main-header .search input {
   width: 100%;
   outline: none;
-  padding: 0.8rem;
-  font-size: 1.2rem;
+  padding: 0.5rem;
+  font-size: 1rem;
   border-radius: 50px;
 }
 
@@ -40,7 +44,20 @@
   display: none;
 }
 
+.links {
+  text-align: center;
+}
+
+.links a {
+  display: inline-block;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+}
+
 @media (max-width: 800px) {
+  .header-wrapper {
+    margin-bottom: 1rem;
+  }
   .main-header .search,
   .main-header nav {
     display: none;

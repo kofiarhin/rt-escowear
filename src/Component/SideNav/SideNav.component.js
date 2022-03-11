@@ -12,12 +12,6 @@ const SideNav = () => {
         onClick={() => dispatch(removeSideNav())}
       ></i>
       <Search />
-
-      <nav>
-        <Link to="Cart">
-          Cart <span>2</span>
-        </Link>
-      </nav>
     </div>
   );
 };
