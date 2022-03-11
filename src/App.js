@@ -12,6 +12,7 @@ import Footer from "./Component/Footer/Footer.component";
 import Landing from "./Pages/Landing/Landing.page";
 import SearchPage from "./Pages/Search/Search.page";
 import { getStoreData } from "./redux/action/data.actions";
+import Playground from "./Pages/Playground/Playground.page";
 
 // App
 const App = () => {
@@ -32,6 +33,7 @@ const App = () => {
           <Route path="/home/:type" element={<Home />} />
           <Route path="/details/:type/:name" element={<Details />} />
           <Route path="/search/:search" element={<SearchPage />} />
+          <Route path="/playground" element={<Playground />} />
         </Routes>
 
         <Footer />

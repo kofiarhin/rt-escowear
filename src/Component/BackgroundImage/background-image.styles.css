@@ -1,0 +1,8 @@
+.background-image {
+  width: 100%;
+  background-size: contain;
+  background-position: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  margin: 0 auto 1rem;
+}
