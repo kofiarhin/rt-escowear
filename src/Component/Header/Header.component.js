@@ -1,10 +1,12 @@
 import Search from "../Search/Search.component";
 import "./header.styles.css";
 import { Link } from "react-router-dom";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { showSideNav } from "../../redux/action/general.actions";
 const Header = () => {
   const dispatch = useDispatch();
+  const { cartData } = useSelector((state) => state.cartReducer);
+
   return (
     <header className="header-wrapper">
       <div className="main-header">
@@ -16,7 +18,7 @@ const Header = () => {
         <nav>
           <Link to="/">Home</Link>
           <Link to="/cart">
-            Cart <span>2</span>
+            Cart <span>{cartData.length > 0 ? cartData.length : ""} </span>
           </Link>
         </nav>
 

@@ -1,0 +1,49 @@
+.main-cart-wrapper {
+  min-height: 80vh;
+  width: 540px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.main-cart-wrapper button {
+  background-color: red;
+  display: block;
+  padding: 0.8rem 0rem;
+  width: 100%;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.cart-wrapper {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.cart-unit {
+  position: relative;
+}
+.cart-wrapper i {
+  font-size: 1.5rem;
+  color: red;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.cart-wrapper img {
+  width: 200px;
+}
+.cart-wrapper h1 {
+  font-size: 1.2rem;
+}
+
+.cart-unit {
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 20px;
+}
