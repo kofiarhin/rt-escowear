@@ -1,0 +1,50 @@
+.item-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  min-height: 90vh;
+  position: relative;
+}
+
+.item-wrapper img {
+  width: 500px;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+.button-wrapper {
+  margin-top: 2rem;
+}
+.button-wrapper button {
+  outline: none;
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.8rem 3rem;
+}
+
+.image-wrapper {
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: repeat(3, 1fr);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.image-wrapper .image-unit {
+  cursor: pointer;
+}
+.image-wrapper .image-unit img {
+  width: 100px;
+}
+@media (max-width: 800px) {
+  .item-wrapper {
+    display: block;
+    text-align: center;
+  }
+
+  .item-wrapper .button-wrapper {
+    margin-top: 1rem;
+  }
+}

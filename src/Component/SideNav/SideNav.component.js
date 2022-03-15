@@ -3,6 +3,7 @@ import "./sideNav.styles.css";
 import { Link } from "react-router-dom";
 import { removeSideNav } from "../../redux/action/general.actions";
 import { useDispatch } from "react-redux";
+import Nav from "./Nav/Nav.component";
 const SideNav = () => {
   const dispatch = useDispatch();
   return (
@@ -12,6 +13,7 @@ const SideNav = () => {
         onClick={() => dispatch(removeSideNav())}
       ></i>
       <Search />
+      <Nav />
     </div>
   );
 };
