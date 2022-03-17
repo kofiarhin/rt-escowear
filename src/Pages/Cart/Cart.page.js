@@ -14,13 +14,15 @@ const Cart = () => {
 
   return (
     <div className="cart">
-      <h1 className="title"> Your Cart</h1>
+      <div className="container">
+        <h1 className="title"> Your Cart</h1>
 
-      {cartData && cartData.length > 0 ? (
-        <CartList />
-      ) : (
-        <h1 className="title"> Empty Cart </h1>
-      )}
+        {cartData && cartData.length > 0 ? (
+          <CartList />
+        ) : (
+          <h1 className="title"> Empty Cart </h1>
+        )}
+      </div>
     </div>
   );
 };
