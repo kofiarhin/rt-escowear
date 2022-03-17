@@ -31,9 +31,9 @@ const CartList = () => {
 
               <div className="text-wrapper">
                 <Link to={`/details/${type}/${name}`}>
-                  <h1> {name} </h1>
+                  <h1 className="name"> {name} </h1>
                 </Link>
-                <h2> {price.toFixed(2)} </h2>
+                <p className="price"> ${price.toFixed(2)} </p>
               </div>
               <i
                 className="fa fa-close"
@@ -45,7 +45,7 @@ const CartList = () => {
       </div>
 
       <div className="text-wrapper">
-        <h2>Total: ${calcTotal(cartData).toFixed(2)} </h2>
+        <p className="total">Total: ${calcTotal(cartData).toFixed(2)} </p>
       </div>
       <button onClick={() => dispatch(clearCart())}>Clear Cart</button>
     </div>

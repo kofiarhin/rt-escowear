@@ -35,7 +35,7 @@
 }
 
 .cart-wrapper img {
-  width: 200px;
+  width: 100%;
 }
 .cart-wrapper h1 {
   font-size: 1.2rem;
@@ -46,12 +46,28 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-gap: 20px;
+  position: relative;
 }
 
 .main-cart-wrapper .text-wrapper {
   margin: 2rem 0rem;
 }
 
-.main-cart-wrapper .text-wrapper h2 {
+.main-cart-wrapper .price,
+.main-cart-wrapper .name {
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+.main-cart-wrapper .slug {
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.main-cart-wrapper .total {
   font-size: 2rem;
+}
+@media (max-width: 800px) {
+  .cart-wrapper p {
+    font-size: 1rem;
+  }
 }

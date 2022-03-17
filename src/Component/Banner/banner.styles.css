@@ -25,6 +25,14 @@
   background-color: rgb(0, 0, 0);
   padding: 1rem 3rem;
   cursor: pointer;
+  transition: all ease-in-out 300ms;
+}
+
+.overlay a:hover {
+  background-color: white;
+  color: black;
+  border: 4px solid black;
+  border-radius: 5px;
 }
 
 @media (max-width: 800px) {
