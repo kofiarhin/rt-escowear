@@ -47,3 +47,11 @@
   grid-template-columns: 1fr 2fr;
   grid-gap: 20px;
 }
+
+.main-cart-wrapper .text-wrapper {
+  margin: 2rem 0rem;
+}
+
+.main-cart-wrapper .text-wrapper h2 {
+  font-size: 2rem;
+}

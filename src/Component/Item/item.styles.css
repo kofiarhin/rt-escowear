@@ -1,27 +1,14 @@
 .item-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  min-height: 90vh;
+  min-height: 60vh;
   position: relative;
 }
 
 .item-wrapper img {
-  width: 500px;
+  max-width: 500px;
   display: block;
   margin: 0 auto 1rem;
-}
-
-.button-wrapper {
-  margin-top: 2rem;
-}
-.button-wrapper button {
-  outline: none;
-  border: none;
-  background-color: black;
-  color: white;
-  font-size: 1.2rem;
-  padding: 0.8rem 3rem;
-  cursor: pointer;
 }
 
 .image-wrapper {
@@ -39,6 +26,26 @@
 .image-wrapper .image-unit img {
   width: 100px;
 }
+
+.item-wrapper .content h1 {
+  margin-bottom: 1rem;
+}
+
+.item-wrapper .content p {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.button-wrapper button {
+  outline: none;
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem 4rem;
+  cursor: pointer;
+}
+
 @media (max-width: 800px) {
   .item-wrapper {
     display: block;
@@ -47,5 +54,19 @@
 
   .item-wrapper .button-wrapper {
     margin-top: 1rem;
+  }
+
+  .image-wrapper .image-unit img {
+    width: 80px;
+  }
+  .item-wrapper .content h1 {
+    font-size: 1.8rem;
+  }
+
+  .item-wrapper .content p {
+    font-size: 2.5rem;
+  }
+  .button-wrapper button {
+    padding: 0.8rem 3rem;
   }
 }

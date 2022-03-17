@@ -1,3 +1,3 @@
 # A simple e-commerce application using react and implementing redux
 
-# [Live Demo](https://62309a75d7821a194e7bb442--elastic-roentgen-f354da.netlify.app)
+# [Live Demo](https://6232f8542505d65ad399eef7--elastic-roentgen-f354da.netlify.app)

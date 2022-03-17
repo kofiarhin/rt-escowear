@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 const Home = () => {
   const { type } = useParams();
   return (
-    <div>
+    <div className="container">
       <CardList type={type} />
     </div>
   );

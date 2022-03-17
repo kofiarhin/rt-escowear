@@ -18,7 +18,11 @@ const Details = () => {
   }
 
   return (
-    <div>{!isPending ? <Item item={item} type={type} /> : <Loading />}</div>
+    <div className="details">
+      <div className="container">
+        {!isPending ? <Item item={item} type={type} /> : <Loading />}
+      </div>
+    </div>
   );
 };
 export default Details;

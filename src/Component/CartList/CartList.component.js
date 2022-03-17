@@ -10,6 +10,16 @@ const CartList = () => {
   const { cartData } = useSelector((state) => state.cartReducer);
   const dispatch = useDispatch();
 
+  const calcTotal = (data) => {
+    let total = 0;
+
+    data.forEach((item) => {
+      total += parseInt(item.price);
+    });
+
+    return total;
+  };
+
   return (
     <div className="main-cart-wrapper">
       <div className="cart-wrapper">
@@ -32,6 +42,10 @@ const CartList = () => {
             </div>
           );
         })}
+      </div>
+
+      <div className="text-wrapper">
+        <h2>Total: ${calcTotal(cartData).toFixed(2)} </h2>
       </div>
       <button onClick={() => dispatch(clearCart())}>Clear Cart</button>
     </div>

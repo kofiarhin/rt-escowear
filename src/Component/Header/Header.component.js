@@ -9,29 +9,34 @@ const Header = () => {
 
   return (
     <header className="header-wrapper">
-      <div className="main-header">
-        <Link to="/">
-          <h1>EscoWear</h1>
-        </Link>
-
-        <Search />
-        <nav>
-          <Link to="/">Home</Link>
-          <Link to="/cart">
-            Cart <span>{cartData.length > 0 ? cartData.length : ""} </span>
+      <div className="container">
+        <div className="main-header">
+          <Link to="/">
+            <h1>EscoWear</h1>
           </Link>
-        </nav>
 
-        <div className="menu" onClick={() => dispatch(showSideNav())}>
-          <i className="fa fa-bars"></i>
+          <Search />
+          <nav>
+            <Link to="/">
+              <i className="fa fa-home"></i>
+            </Link>
+            <Link to="/cart">
+              <i className="fa fa-shopping-cart"></i>
+              <span>{cartData.length > 0 ? cartData.length : ""} </span>
+            </Link>
+          </nav>
+
+          <div className="menu" onClick={() => dispatch(showSideNav())}>
+            <i className="fa fa-bars"></i>
+          </div>
         </div>
-      </div>
 
-      <div className="links">
-        <Link to="/home/shirts">Shirts</Link>
-        <Link to="/home/gym">Gym</Link>
-        <Link to="/home/shoes">Shoes</Link>
-        <Link to="/home/hoodies">Hoodies</Link>
+        <div className="links">
+          <Link to="/home/shirts">Shirts</Link>
+          <Link to="/home/gym">Gym</Link>
+          <Link to="/home/shoes">Shoes</Link>
+          <Link to="/home/hoodies">Hoodies</Link>
+        </div>
       </div>
     </header>
   );

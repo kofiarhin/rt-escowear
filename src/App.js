@@ -12,6 +12,7 @@ import Footer from "./Component/Footer/Footer.component";
 import Landing from "./Pages/Landing/Landing.page";
 import SearchPage from "./Pages/Search/Search.page";
 import { getStoreData } from "./redux/action/data.actions";
+import { getCartData } from "./redux/action/cart.actions";
 import Playground from "./Pages/Playground/Playground.page";
 import Cart from "./Pages/Cart/Cart.page";
 
@@ -22,10 +23,11 @@ const App = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getStoreData());
+    dispatch(getCartData());
   }, []);
 
   return (
-    <div className="container">
+    <div>
       <BrowserRouter>
         <Header />
         {showSideNav ? <SideNav /> : null}

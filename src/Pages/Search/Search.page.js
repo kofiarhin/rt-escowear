@@ -13,7 +13,7 @@ const SearchPage = () => {
   );
 
   return (
-    <div>
+    <div className="container">
       {items.length > 0 ? (
         <div className="wrapper">
           {items.map((item) => (

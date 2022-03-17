@@ -45,7 +45,7 @@ const Item = ({ item = {}, type }) => {
       </div>
       <div className="content">
         <h1> {name} </h1>
-        <h2> $ {price.toFixed(2)} </h2>
+        <p> $ {price.toFixed(2)} </p>
         <div className="button-wrapper">
           <button onClick={() => handleAddItem()}>Add To Cart</button>
         </div>
