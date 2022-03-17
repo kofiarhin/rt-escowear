@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import "./app.styles.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import CardList from "./Component/CardList/CardList.component";
 import { useSelector } from "react-redux";
 import Home from "./Pages/Home/Home.page.component";
 import Details from "./Pages/Details/Details.page";
@@ -21,10 +20,11 @@ const App = () => {
   const { showSideNav } = useSelector((state) => state.generalReducer);
 
   const dispatch = useDispatch();
+
   useEffect(() => {
     dispatch(getStoreData());
     dispatch(getCartData());
-  }, []);
+  }, [dispatch]);
 
   return (
     <div>

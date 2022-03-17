@@ -8,7 +8,7 @@ const checkItem = (cartData, item) => {
 
   if (!data) {
     sessionStorage.setItem("cartData", JSON.stringify([item]));
-    return [{ item }];
+    return [item];
   } else {
     data = JSON.parse(sessionStorage.getItem("cartData"));
 

@@ -1,10 +1,8 @@
 import { Link } from "react-router-dom";
 import "./card.styles.css";
 import Image from "../Image/Image.component";
-import BackgroundImage from "../BackgroundImage/Background-Image.component";
-
 const Card = ({ item = {}, type }) => {
-  const { name, rest } = item;
+  const { name } = item;
 
   return (
     <Link to={`/details/${type}/${name}`} className="card">

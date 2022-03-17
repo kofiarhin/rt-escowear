@@ -1,18 +1,16 @@
 import "./item.styles.css";
 import Image from "../Image/Image.component";
 import { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { addItemToCart } from "../../redux/action/cart.actions";
 import { useNavigate } from "react-router-dom";
 
 // item
 const Item = ({ item = {}, type }) => {
-  const { name, price, size } = item;
+  const { name, price } = item;
   const [position, setPosition] = useState(1);
   const navigate = useNavigate();
-  //   rredux
-  const { cartData } = useSelector((state) => state.cartReducer);
-
+  //   redux
   const dispatch = useDispatch();
 
   const handleAddItem = () => {

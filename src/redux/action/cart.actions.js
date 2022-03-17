@@ -1,11 +1,5 @@
 import { ADD_ITEM, CLEAR_CART, REMOVE_ITEM, GET_CART_DATA } from "../constants";
 
-const getSessionData = (key) => {
-  return sessionStorage.getItem(key);
-};
-
-const setSessionData = (data) => {};
-
 export const addItemToCart = (item) => {
   return {
     type: ADD_ITEM,

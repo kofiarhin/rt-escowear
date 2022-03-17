@@ -4,7 +4,7 @@ import { flattenData } from "../../Component/helper/helper";
 import Card from "../../Component/Card/Card.component";
 const SearchPage = () => {
   const { search } = useParams();
-  const { data, ...rest } = useSelector((state) => state.dataReducer);
+  const { data } = useSelector((state) => state.dataReducer);
 
   const transformed = flattenData(data);
 
